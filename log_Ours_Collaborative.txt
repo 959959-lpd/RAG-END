@@ -1,0 +1,172 @@
+Loading Embedding Model (/root/autodl-tmp/hf_cache/hub/models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181)...
+Loading existing FAISS index from /root/paper/AI_Literary_Creation_Engine/knowledge_base/literary_faiss.index...
+Running Experiment: Ours_Collaborative
+Config: LoRA=True, Collaborative=True
+Initializing Evaluation Metrics Models...
+Loading Emotion Model from /root/autodl-tmp/hf_cache/hub/models--bhadresh-savani--bert-base-uncased-emotion/snapshots/04e32b0ce2cd9c6cc36daffabeda36857058da63 (Offline mode)...
+Loading Generation Model for Benchmark (LoRA=True)...
+Loading Base Model: /root/autodl-tmp/hf_cache/hub/models--deepseek-ai--DeepSeek-R1-Distill-Llama-8B/snapshots/6a6f4aa4197940add57724a7707d069478df56b1...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.51s/it]
+Loading Fine-Tuned LoRA Adapter from: /root/autodl-tmp/results_checkpoints/checkpoint-68700
+trainable params: 0 || all params: 8,198,033,408 || trainable%: 0.0000
+Evaluation models ready.
+Loading test data from /root/paper/AI_Literary_Creation_Engine/processed_data/training/fine_tuning_data.jsonl...
+Starting Generation for 35 samples...
+  0%|          | 0/35 [00:00<?, ?it/s]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse or expression; in the purest manner written ...
+  3%|▎         | 1/35 [00:16<09:26, 16.66s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 11, Neg tokens: 5
+  Generated: of the next five poems are reproduced here with mo...
+  6%|▌         | 2/35 [00:38<10:42, 19.46s/it]
+Prompt: Write a poem. Ensure the tone is distinctly fear (... | Target: fear (fear)
+Initialized LogitsProcessor for fear. Pos tokens: 11, Neg tokens: 5
+  Generated: of them are included in this verse. The five poems...
+  9%|▊         | 3/35 [00:59<10:52, 20.38s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 8, Neg tokens: 5
+  Generated: quantity and quality of his verse as in any other;...
+ 11%|█▏        | 4/35 [01:21<10:45, 20.81s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+Initialized LogitsProcessor for sadness. Pos tokens: 8, Neg tokens: 8
+  Generated: verse and expression; in other words, I wrote them...
+ 14%|█▍        | 5/35 [01:42<10:31, 21.04s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 8, Neg tokens: 5
+  Generated: quantity and quality of hisverseexpression will be...
+ 17%|█▋        | 6/35 [02:03<10:14, 21.18s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse andexpression; in other words, what he himse...
+ 20%|██        | 7/35 [02:25<09:55, 21.27s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+Initialized LogitsProcessor for sadness. Pos tokens: 17, Neg tokens: 8
+  Generated: The next five poems are printed with immediate fol...
+ 23%|██▎       | 8/35 [02:46<09:35, 21.33s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse and expression; in the acute delight of writ...
+ 26%|██▌       | 9/35 [03:08<09:15, 21.38s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: And bear with him, as he puts forth his verse expr...
+ 29%|██▊       | 10/35 [03:29<08:55, 21.41s/it]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse andexpression; in other words, what comes to...
+ 31%|███▏      | 11/35 [03:51<08:34, 21.43s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse and expression; written by the writer of the...
+ 34%|███▍      | 12/35 [04:12<08:13, 21.44s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 8, Neg tokens: 5
+  Generated: quantity and quality of his verse will be found in...
+ 37%|███▋      | 13/35 [04:34<07:51, 21.44s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse or in the mereexpression of his writer’s own...
+ 40%|████      | 14/35 [04:55<07:30, 21.45s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of what comes out in the vers...
+ 43%|████▎     | 15/35 [05:17<07:09, 21.45s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse or in the very nature ofexpression; as writt...
+ 46%|████▌     | 16/35 [05:38<06:48, 21.50s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse or other imaginative expression; in short, a...
+ 49%|████▊     | 17/35 [06:00<06:26, 21.50s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of what comes to it in the ve...
+ 51%|█████▏    | 18/35 [06:21<06:05, 21.49s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+Initialized LogitsProcessor for sadness. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of his verse as to pain itsex...
+ 54%|█████▍    | 19/35 [06:43<05:43, 21.49s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+Initialized LogitsProcessor for sadness. Pos tokens: 17, Neg tokens: 8
+  Generated: [Note on text: The next five poems are printed wit...
+ 57%|█████▋    | 20/35 [07:04<05:22, 21.48s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+Initialized LogitsProcessor for sadness. Pos tokens: 17, Neg tokens: 8
+  Generated: The nextfive verse-images are coloured with five d...
+ 60%|██████    | 21/35 [07:26<05:00, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly love (... | Target: love (love)
+Initialized LogitsProcessor for love. Pos tokens: 8, Neg tokens: 0
+  Generated: quantity and quality of what comes from them inver...
+ 63%|██████▎   | 22/35 [07:47<04:38, 21.45s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 7, Neg tokens: 5
+  Generated: verse as he has with his own mind and through hisp...
+ 66%|██████▌   | 23/35 [08:08<04:17, 21.46s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse or in the brevity ofexpression; by the write...
+ 69%|██████▊   | 24/35 [08:30<03:56, 21.46s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse and expression; written by the writer of the...
+ 71%|███████▏  | 25/35 [08:51<03:34, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 11, Neg tokens: 5
+  Generated: of the next five poems are enclosed in &. Immediat...
+ 74%|███████▍  | 26/35 [09:13<03:13, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse or in the breathing of whose excited imagina...
+ 77%|███████▋  | 27/35 [09:34<02:51, 21.48s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity of verse as well as ofexpression; and to ...
+ 80%|████████  | 28/35 [09:56<02:30, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+Initialized LogitsProcessor for anger. Pos tokens: 8, Neg tokens: 5
+  Generated: quantity and quality of his verse will not be less...
+ 83%|████████▎ | 29/35 [10:17<02:08, 21.46s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+Initialized LogitsProcessor for sadness. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of his verse will not be less...
+ 86%|████████▌ | 30/35 [10:39<01:47, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of what comes through hisvers...
+ 89%|████████▊ | 31/35 [11:00<01:25, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of what comes through your ve...
+ 91%|█████████▏| 32/35 [11:22<01:04, 21.47s/it]
+Prompt: Write a poem. Ensure the tone is distinctly love (... | Target: love (love)
+Initialized LogitsProcessor for love. Pos tokens: 8, Neg tokens: 0
+  Generated: quantity and quality of what comes from that verse...
+ 94%|█████████▍| 33/35 [11:43<00:42, 21.45s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 4, Neg tokens: 8
+  Generated: verse andexpression; in the pleasant manner of the...
+ 97%|█████████▋| 34/35 [12:05<00:21, 21.45s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+Initialized LogitsProcessor for joy. Pos tokens: 8, Neg tokens: 8
+  Generated: quantity and quality of what comes from that verse...
+100%|██████████| 35/35 [12:26<00:00, 21.46s/it]100%|██████████| 35/35 [12:26<00:00, 21.33s/it]
+Evaluating Emotions & Diversity for 35 samples...
+Emotion Analysis:   0%|          | 0/35 [00:00<?, ?it/s]Emotion Analysis:  31%|███▏      | 11/35 [00:00<00:00, 108.88it/s]Emotion Analysis:  66%|██████▌   | 23/35 [00:00<00:00, 114.55it/s]Emotion Analysis: 100%|██████████| 35/35 [00:00<00:00, 114.13it/s]Emotion Analysis: 100%|██████████| 35/35 [00:00<00:00, 113.63it/s]
+Calculating Reference-based Metrics (BLEU, ROUGE)...
+Results appended to /root/experiment_results.csv
+
+========================================
+Experiment Results (Benchmark)
+========================================
+ECFR (Emotional Correctness): 68.57%
+EER  (Extreme Emotion Rate):  17.14%
+Drift (Avg Deviation):       0.3726
+Distinct-2 (Diversity):      0.5737
+BLEU-4 (Overlap):            0.00
+ROUGE-L (Structure):         1.21
+========================================
+Results saved to experiment_results.csv (Run: Ours_Collaborative)

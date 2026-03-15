@@ -1,0 +1,137 @@
+Loading Embedding Model (/root/autodl-tmp/hf_cache/hub/models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181)...
+Loading existing FAISS index from /root/paper/AI_Literary_Creation_Engine/knowledge_base/literary_faiss.index...
+Running Experiment: Ablation_StandardDecoding
+Config: LoRA=True, Collaborative=False
+Initializing Evaluation Metrics Models...
+Loading Emotion Model from /root/autodl-tmp/hf_cache/hub/models--bhadresh-savani--bert-base-uncased-emotion/snapshots/04e32b0ce2cd9c6cc36daffabeda36857058da63 (Offline mode)...
+Loading Generation Model for Benchmark (LoRA=True)...
+Loading Base Model: /root/autodl-tmp/hf_cache/hub/models--deepseek-ai--DeepSeek-R1-Distill-Llama-8B/snapshots/6a6f4aa4197940add57724a7707d069478df56b1...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.60s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.45s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.47s/it]
+Loading Fine-Tuned LoRA Adapter from: /root/autodl-tmp/results_checkpoints/checkpoint-68700
+trainable params: 0 || all params: 8,198,033,408 || trainable%: 0.0000
+Evaluation models ready.
+Loading test data from /root/paper/AI_Literary_Creation_Engine/processed_data/training/fine_tuning_data.jsonl...
+Starting Generation for 35 samples...
+  0%|          | 0/35 [00:00<?, ?it/s]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I think that's what they call "rhythm."  Let me tr...
+  3%|▎         | 1/35 [00:21<12:20, 21.78s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: You know it's going to be angry, for there's no on...
+  6%|▌         | 2/35 [00:43<11:51, 21.56s/it]
+Prompt: Write a poem. Ensure the tone is distinctly fear (... | Target: fear (fear)
+  Generated: I'd better run away as fast as I can, for if I sta...
+  9%|▊         | 3/35 [01:04<11:27, 21.50s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: The following stanzas are based on that verse. The...
+ 11%|█▏        | 4/35 [01:26<11:05, 21.46s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+  Generated: is of intense passion, and there are no limits to ...
+ 14%|█▍        | 5/35 [01:47<10:43, 21.44s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: missing bracket cLoses: please, let US know so WE ...
+ 17%|█▋        | 6/35 [02:08<10:21, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I feel so much more of you now than ever before, f...
+ 20%|██        | 7/35 [02:30<09:59, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+  Generated: is on fire, and burns with intensity. The rhyme sc...
+ 23%|██▎       | 8/35 [02:51<09:38, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I like that, I really do, for it's full of intensi...
+ 26%|██▌       | 9/35 [03:13<09:16, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I think that's it!  Let me put some words to music...
+ 29%|██▊       | 10/35 [03:34<08:55, 21.42s/it]You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I like to see big words and big meanings in poetry...
+ 31%|███▏      | 11/35 [03:55<08:33, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I like that, I like it very much; it's full of int...
+ 34%|███▍      | 12/35 [04:17<08:12, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: I'd like to hear you how you feel when you're angr...
+ 37%|███▋      | 13/35 [04:38<07:50, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I think that's what they call "rhythm."  Let me tr...
+ 40%|████      | 14/35 [05:00<07:29, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: Is of too keen delight; and, replete, over all!--o...
+ 43%|████▎     | 15/35 [05:21<07:07, 21.38s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I'd like to see some of those poems they're puttin...
+ 46%|████▌     | 16/35 [05:42<06:46, 21.38s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I like to see, how the bright words of ours, in ho...
+ 49%|████▊     | 17/35 [06:04<06:25, 21.39s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: A CHALLENGING POEM. Intensity: 1-5. No holding bac...
+ 51%|█████▏    | 18/35 [06:25<06:03, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+  Generated: is here rendered with intense passion. The poem it...
+ 54%|█████▍    | 19/35 [06:47<05:42, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+  Generated: is of intense passion or love, and can be read wit...
+ 57%|█████▋    | 20/35 [07:08<05:21, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+  Generated: is here offered, will, it is probable, feel most s...
+ 60%|██████    | 21/35 [07:29<04:59, 21.39s/it]
+Prompt: Write a poem. Ensure the tone is distinctly love (... | Target: love (love)
+  Generated: I think that's what they call "intensity" in love,...
+ 63%|██████▎   | 22/35 [07:51<04:38, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: The following stanzas will indicate that there is ...
+ 66%|██████▌   | 23/35 [08:12<04:16, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I think that's great. Let me write down what I hav...
+ 69%|██████▊   | 24/35 [08:34<03:55, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: is of intense joy, and that there's nothing in thi...
+ 71%|███████▏  | 25/35 [08:55<03:34, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: I'd like to throw it in the air as an insult to so...
+ 74%|███████▍  | 26/35 [09:16<03:12, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: I feel so much more of you now, for with each line...
+ 77%|███████▋  | 27/35 [09:38<02:51, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: Reunion                                           ...
+ 80%|████████  | 28/35 [09:59<02:29, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly anger ... | Target: anger (anger)
+  Generated: Is dowered with anger's intense and relentless sur...
+ 83%|████████▎ | 29/35 [10:21<02:08, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly sadnes... | Target: sadness (sadness)
+  Generated: is here rendered with all its intensity and darkne...
+ 86%|████████▌ | 30/35 [10:42<01:47, 21.42s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: Is so sweet and so fierce as these, by them doth i...
+ 89%|████████▊ | 31/35 [11:03<01:25, 21.41s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: A CHALLENGING POEM that dares you to believe in th...
+ 91%|█████████▏| 32/35 [11:25<01:04, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly love (... | Target: love (love)
+  Generated: I burned with love's own fire, and found no worth ...
+ 94%|█████████▍| 33/35 [11:46<00:42, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: Is so sweet and so intense, it almost makes one fo...
+ 97%|█████████▋| 34/35 [12:08<00:21, 21.40s/it]
+Prompt: Write a poem. Ensure the tone is distinctly joy (I... | Target: joy (joy)
+  Generated: A CHARMING POEM                                   ...
+100%|██████████| 35/35 [12:23<00:00, 19.70s/it]100%|██████████| 35/35 [12:23<00:00, 21.25s/it]
+Evaluating Emotions & Diversity for 35 samples...
+Emotion Analysis:   0%|          | 0/35 [00:00<?, ?it/s]Emotion Analysis:  66%|██████▌   | 23/35 [00:00<00:00, 226.07it/s]Emotion Analysis: 100%|██████████| 35/35 [00:00<00:00, 228.47it/s]
+Calculating Reference-based Metrics (BLEU, ROUGE)...
+Results appended to /root/experiment_results.csv
+
+========================================
+Experiment Results (Benchmark)
+========================================
+ECFR (Emotional Correctness): 71.43%
+EER  (Extreme Emotion Rate):  8.57%
+Drift (Avg Deviation):       0.3504
+Distinct-2 (Diversity):      0.5951
+BLEU-4 (Overlap):            0.00
+ROUGE-L (Structure):         1.19
+========================================
+Results saved to experiment_results.csv (Run: Ablation_StandardDecoding)
